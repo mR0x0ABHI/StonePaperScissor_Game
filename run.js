@@ -14,13 +14,13 @@ option.forEach(opt=>{
    setTimeout(()=>{
    comp.classList.remove("shakeComp");
    player.classList.remove("shakeComp");
-   player.src="./images/"+opt.innerHTML+"Player.png";
+   player.src="./"+opt.innerHTML+"Player.png";
 
    const choice = ["STONE","PAPER","SCISSOR"]
    let arrayNo =Math.floor(Math.random()*3);
    let compChoice = choice[arrayNo];
 
-   comp.src="./images/" +compChoice+ "Computer.png";
+   comp.src="./" +compChoice+ "Computer.png";
 
    let userChoice = opt.innerHTML;
 
